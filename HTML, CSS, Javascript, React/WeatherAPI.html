@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <input type="text" id="location-input" placeholder="Enter location">
+    <button onclick="getWeather()">Get Weather</button>
+    <div id="weather-info"></div>
+
+    <script>
+        function getWeather() {
+            const location = document.getElementById("location-input").value;
+            fetch(`https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${location}`)
+                .then(response => response.json())
+                .then(data => {
+                    const weatherInfo = document.getElementById("weather-info");
+                    weatherInfo.innerHTML = `Temperature: ${data.current.temp_c}°C<br>
+                                             Condition: ${data.current.condition.text}`;
+                })
+                .catch(error => console.log(error));
+        }
+    </script>
+</body>
+</html>
