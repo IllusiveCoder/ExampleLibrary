@@ -1,5 +1,9 @@
 import requests
 
+'''Build a currency converter that allows users to 
+convert between different currencies using exchange 
+rates from a public API.'''
+
 def convert_currency(amount, from_currency, to_currency):
     api_key = "YOUR_API_KEY"
     url = f"https://v6.exchangerate-api.com/v6/{api_key}/pair/{from_currency}/{to_currency}/{amount}"

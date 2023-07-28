@@ -1,5 +1,10 @@
 import json
 
+'''Create a simple expense tracker that allows users to 
+record their daily expenses, categorize them, and view 
+spending summaries. The project will use a file-based 
+approach to store the data.'''
+
 class ExpenseTracker:
     def __init__(self):
         self.expenses = {}

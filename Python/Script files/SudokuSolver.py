@@ -1,3 +1,12 @@
+
+'''This program can solve a given Sudoku puzzle using the 
+backtracking algorithm. Users input a 9x9 Sudoku board 
+where empty cells are represented as 0s. 
+The program employs the backtracking technique to 
+find the correct values for each cell, ensuring that 
+all rows, columns, and 3x3 subgrids contain unique 
+numbers from 1 to 9.'''
+
 def solve_sudoku(board):
     for row in range(9):
         for col in range(9):

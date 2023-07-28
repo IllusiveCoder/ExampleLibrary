@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/*Develop a simple quiz game where users are presented with multiple-choice questions and earn points based on their answers. 
+The code defines a QuizGame class that presents a series of questions to the user. The questions, options, and correct answers 
+are stored in arrays. The program uses a Scanner object to read the user's input and compares it with the correct answer. 
+After answering all the questions, the game displays the user's score.*/
+
 public class QuizGame {
     private int score;
 

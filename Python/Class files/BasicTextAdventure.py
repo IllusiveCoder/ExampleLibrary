@@ -1,3 +1,14 @@
+
+'''This program implements a simple text-based 
+adventure game where players navigate through different 
+rooms, interact with objects, and make choices that 
+affect the outcome of the story. Players can move 
+between rooms by entering cardinal directions 
+(north, south, east, west), and the game responds 
+with the current room's description. 
+The game loop allows players to continue 
+exploring until they choose to exit.'''
+
 class Room:
     def __init__(self, name, description):
         self.name = name

@@ -1,6 +1,13 @@
 import os
 import shutil
 
+'''Build a file organizer script that helps users 
+organize files in a specific directory based on their 
+file types. The script will scan the target directory, 
+identify the file types, and move them into designated 
+subdirectories (e.g., "Images," "Documents," "Videos," 
+etc.).'''
+
 class FileOrganizer:
     def __init__(self, target_directory):
         self.target_directory = target_directory

@@ -1,5 +1,11 @@
 from cryptography.fernet import Fernet
 
+'''Develop a password manager that allows users to 
+securely store their passwords for various accounts. 
+The project will use encryption to protect sensitive 
+information, and it will offer functionalities to add, 
+view, and update passwords for different accounts.'''
+
 class PasswordManager:
     def __init__(self, master_password):
         self.master_password = master_password

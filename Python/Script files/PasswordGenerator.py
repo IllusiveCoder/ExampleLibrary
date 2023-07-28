@@ -1,6 +1,13 @@
 import random
 import string
 
+'''The Random Password Generator generates random 
+strong passwords of a specified length. The passwords 
+include a mix of uppercase letters, lowercase letters, 
+numbers, and special characters. Users can specify 
+the desired password length, and the program will 
+create and display the generated password.'''
+
 def generate_password(length=12):
     characters = string.ascii_letters + string.digits + string.punctuation
     password = ''.join(random.choice(characters) for _ in range(length))

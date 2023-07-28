@@ -1,5 +1,11 @@
 import hashlib
 
+'''Build a URL shortener service that converts long URLs 
+into shorter, more manageable ones. The project will use 
+a simple hash function to generate short codes for the 
+original URLs, and it will maintain a mapping of short 
+codes to the original URLs.'''
+
 class URLShortener:
     def __init__(self):
         self.url_mapping = {}
