@@ -1,6 +1,6 @@
 
 '''Description: This program helps users track their daily fitness activities, 
-including steps taken, calories burned, and distance traveled.'''
+including steps taken, calories burned, and distance traveled.'''
 
 class PersonalFitnessTracker:
     def _init_(self):
